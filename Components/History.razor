@@ -38,7 +38,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         AppState.OnChanged += OnAppStateChanged;
-        var data = await LocalStorage.GetItemAsync<List<ImcModel>?>("data");
+        var data = await LocalStorage.GetItemAsync<List<ImcModel>?>("data-imc");
         if (data is not null)
             AppState.History = data;
     }

@@ -1,11 +1,15 @@
 .success {
-    color: #8C52FF;
+    color: #77dd77;
 }
 
 .warning {
-    color: #FFBD59;
+    color: #fdfd96;
 }
 
 .danger {
-    color: #F818F8;
+    color: #ff6961;
+}
+
+.danger-red {
+    color: #ce170d;
 }

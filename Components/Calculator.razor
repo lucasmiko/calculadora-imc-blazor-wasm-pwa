@@ -36,18 +36,27 @@
 <Dialog @ref="_dialog" OnModalCloseCallback="@OnModalClose">
     @if (_model.Imc < 18.6)
     {
-        <h1>Abaixo do peso <img src="danger.png" alt="Perigo"></h1>
+        <img class="lucas-teste" src="danger.svg" alt="Perigo">
+        <h1>Abaixo do peso</h1>
         <p>Você está abaixo do peso indicado, siga as recomendações do seu nutricionista para chegar lá.</p>
     }
     else if (_model.Imc >= 18.6 && _model.Imc <= 24.9)
     {
-        <h1>Peso ideal <img src="congrats.gif" alt="Parabéns"></h1>
-        <p>Parabéns! Você está na faixa de peso ideal, continue assim.</p>
+        <img class="lucas-teste" src="congrats.svg" alt="Parabéns">
+        <h1>Peso ideal</h1>
+        <p>Parabéns! <br/> Você está na faixa de peso ideal, continue assim.</p>
     }
-    else if (_model.Imc >= 24.9)
+    else if (_model.Imc >= 25 && _model.Imc <= 29.9)
     {
-        <h1>Sobrepeso <img src="danger.png" alt="Perigo"></h1>
+        <img class="lucas-teste" src="danger.svg" alt="Cuidado">
+        <h1>Sobrepeso</h1>
         <p>Você está acima do peso indicado, siga as recomendações do seu nutricionista para chegar lá.</p>
+    }
+    else if (_model.Imc >= 30)
+    {
+        <img class="lucas-teste" src="danger.svg" alt="Perigo">
+        <h1>Obesidade</h1>
+        <p>Você está em grau de obesidade, procure um nutricionista se possível.</p>
     }
 </Dialog>
 

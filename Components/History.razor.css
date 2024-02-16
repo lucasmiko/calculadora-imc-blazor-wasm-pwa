@@ -1,6 +1,22 @@
 /* Listas */
 .list-unstyled {
     list-style: none;
+    padding: 0.5rem;
+    overflow-y: auto;
+    scrollbar-color: transparent;
+}
+
+.list-unstyled::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+.list-unstyled::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.list-unstyled::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .list-item {
